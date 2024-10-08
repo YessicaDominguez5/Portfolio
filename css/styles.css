@@ -4,16 +4,20 @@
     --darkCyan: #008B8B;
     --enlacesNav: #DAA520;
     --fondo: #BC8F8F;
-    
-    
+    --h3: #7d3c98;
    
-
 }
 
 html{
     font-size: 62.5%; /*para poder usar los rem, los rem se adaptan mejor a los distintos tipos de pantalla*/
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 
+}
+.sobreMi, .navegacionPrincipal, .contacto, .proyecto{
+
+ scroll-snap-align: center;
+scroll-snap-stop: always;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -70,6 +74,7 @@ background-color: var(--darkCyan);
 display: flex;
 flex-direction: column;
 align-items: center;
+
 
 }
 @media (min-width: 768px){
@@ -149,7 +154,7 @@ color: var(--blanco);
    display: flex;
    flex-direction: column;
    align-items: center;
-    
+   
     
 }
 
@@ -199,6 +204,7 @@ color: var(--blanco);
 .titulo{
     color: var(--darkCyan);
 }
+
 @media (min-width: 768px){
      
     .proyectos{
@@ -215,4 +221,42 @@ color: var(--blanco);
 
 width: 35rem;
 height: 25rem;
+}
+.proyecto{
+/*alinear título imagen y párrafo del proyecto*/
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.proyecto p{
+    line-height: 2;
+}
+.proyecto h3{
+
+    color: var(--h3) ;
+}
+.contacto{
+
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+
+
+}
+ .contactoGit{
+
+margin-bottom: 2rem;
+
+
+}
+.contactoLink{
+
+    margin-bottom: 2rem;
+}
+.footer{
+
+    text-align: center;
+    padding: 2rem;
 }
