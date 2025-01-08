@@ -231,6 +231,8 @@ align-items: center;
 }
 .proyecto p{
     line-height: 2;
+    text-align: center;
+   width: 35rem;
 }
 .proyecto h3{
 
